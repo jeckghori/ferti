@@ -4,7 +4,7 @@ import pickle
 
 # Load the pre-trained classifier model
 with open('classifier.pkl', 'rb') as file:
-    classifier = pickle.load(file)
+    classifier = pickle.load(file,encoding='latin1')
 
 # Load the encoded fertilizer classes
 with open('fertilizer.pkl', 'rb') as file:
